@@ -1,0 +1,151 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  height: 100%;
+}
+
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: var(--spacing-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  position: relative;
+  overflow: hidden;
+}
+
+.chartCard {
+  height: fit-content;
+}
+
+.cardHeader {
+  font-family: var(--font-family-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--spacing-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.forecastBadge {
+  font-family: var(--font-family-monospace);
+  font-size: 0.65rem;
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.forecastTab {
+  color: var(--accent) !important;
+}
+.forecastTab[data-state="active"] {
+  background-color: var(--accent) !important;
+  color: var(--accent-foreground) !important;
+}
+
+.chartWrapper {
+  height: 250px;
+  position: relative;
+}
+
+.chartWrapper > div {
+  min-height: unset !important;
+  height: 100% !important;
+}
+
+.customTooltip {
+  background-color: var(--popup);
+  color: var(--popup-foreground);
+  border: 1px solid var(--border);
+  padding: var(--spacing-3);
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+  box-shadow: var(--shadow-md);
+  z-index: var(--z-overlay);
+}
+
+.tooltipDate {
+  color: var(--muted-foreground);
+  margin-bottom: var(--spacing-2);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--spacing-1);
+}
+
+.tooltipForecastTag {
+  color: var(--accent);
+  font-size: 0.65rem;
+  margin-left: var(--spacing-1);
+}
+
+.tooltipRate {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: var(--spacing-1);
+}
+
+.tooltipBands {
+  color: var(--muted-foreground);
+  font-size: 0.7rem;
+  margin-bottom: var(--spacing-1);
+}
+
+.tooltipConversion {
+  color: var(--secondary);
+}
+
+.statsGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding-top: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.statBox {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-2);
+}
+
+.statBox:not(:last-child)::after {
+  content: "|";
+  color: var(--border);
+  margin-left: var(--spacing-4);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  font-family: var(--font-family-heading);
+  letter-spacing: 0.05em;
+}
+
+.statValue {
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.statSubValue {
+  font-family: var(--font-family-monospace);
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}

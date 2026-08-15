@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.env
+env.json
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+*-dump-*.sql
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.git/

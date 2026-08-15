@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+:root {
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-7: 1.75rem;
+  --spacing-8: 2rem;
+  --spacing-9: 2.25rem;
+  --spacing-10: 2.5rem;
+  --spacing-11: 2.75rem;
+  --spacing-12: 3rem;
+  --spacing-13: 3.25rem;
+  --spacing-14: 3.5rem;
+  --spacing-15: 3.75rem;
+  --spacing-16: 4rem;
+  --spacing-17: 4.25rem;
+  --spacing-18: 4.5rem;
+  --spacing-19: 4.75rem;
+  --spacing-20: 5rem;
+  /* Note: spacing vars only up to 20 */
+}
+
+:root {
+  /* Executive Terminal Dark Mode */
+  --background: hsl(225 30% 6%);
+  --foreground: hsl(225 15% 95%);
+
+  --surface: hsl(225 25% 9%);
+  --surface-foreground: hsl(225 15% 95%);
+  
+  --sidebar: hsl(225 28% 7%);
+  --sidebar-foreground: hsl(225 15% 85%);
+  
+  --card: hsl(225 25% 11%);
+  --card-foreground: hsl(225 15% 95%);
+  
+  --popup: hsl(225 25% 13%);
+  --popup-foreground: hsl(225 15% 95%);
+
+  /* Neon Cyan for primary actions and current rates */
+  --primary: hsl(175 85% 45%);
+  --primary-foreground: hsl(225 30% 6%);
+
+  /* Amber/Gold for target alerts and secondary actions */
+  --secondary: hsl(40 95% 55%);
+  --secondary-foreground: hsl(225 30% 6%);
+
+  /* Deep Indigo for subtle highlights */
+  --accent: hsl(240 60% 60%);
+  --accent-foreground: hsl(0 0% 100%);
+
+  --muted: hsl(225 20% 18%);
+  --muted-foreground: hsl(225 15% 65%);
+
+  --success: hsl(150 75% 45%);
+  --success-foreground: hsl(225 30% 6%);
+
+  --error: hsl(350 80% 55%);
+  --error-foreground: hsl(0 0% 100%);
+
+  --warning: hsl(40 95% 55%);
+  --warning-foreground: hsl(225 30% 6%);
+
+  --info: hsl(175 85% 45%);
+  --info-foreground: hsl(225 30% 6%);
+  --info-hover: hsl(175 85% 55%);
+  --info-active: hsl(175 85% 35%);
+
+  --border: hsl(225 20% 20%);
+  --border-highlight: hsl(175 85% 45%);
+
+  /* Font Families */
+  --font-family-base: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-family-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-family-monospace: "JetBrains Mono", ui-monospace, monospace;
+  --font-family-cursive: cursive;
+
+  /* Border Radius - Absolute Precision (0px) */
+  --radius-sm: 0px;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-full: 0px; 
+
+  /* Box Shadows - Minimal, relying on borders and subtle glows */
+  --shadow: 0 1px 2px 0 hsl(0 0% 0% / 0.5);
+  --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.5), 0 2px 4px -2px hsl(0 0% 0% / 0.5);
+  --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -4px hsl(0 0% 0% / 0.5);
+  --shadow-focus: 0 0 0 2px hsl(225 30% 6%), 0 0 0 4px hsl(175 85% 45%);
+  --shadow-glow: 0 0 15px -3px hsl(175 85% 45% / 0.3);
+
+  /* Animation */
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 250ms;
+  --animation-duration-slow: 400ms;
+
+  /* Chart colors - High contrast neon against dark background */
+  --chart-color-1: hsl(175 85% 45%); /* Cyan */
+  --chart-color-2: hsl(40 95% 55%);  /* Amber */
+  --chart-color-3: hsl(150 75% 45%); /* Emerald */
+  --chart-color-4: hsl(350 80% 55%); /* Crimson */
+  --chart-color-5: hsl(240 60% 65%); /* Indigo */
+}
+
+.dark {
+  /* Design is dark-mode native. Leaving empty as per instructions. */
+}

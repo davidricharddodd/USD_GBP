@@ -1,0 +1,1 @@
+build me a tool that monitors fx rates hourly if possilbe for the rate of usd to gbp as i want to know best time to transfer 90k usd to gbp giving me the nest rate so need to set alerts when the rate drops to 1.29 for example

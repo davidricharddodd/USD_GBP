@@ -1,0 +1,319 @@
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-family-base);
+}
+
+.cardHeader {
+  font-family: var(--font-family-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--spacing-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  font-family: var(--font-family-heading);
+  letter-spacing: 0.05em;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  background-color: var(--surface);
+  padding: var(--spacing-4);
+  border: 1px solid var(--border);
+}
+
+.inputRow {
+  display: flex;
+  gap: var(--spacing-3);
+  align-items: center;
+}
+
+.inputWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.inputIcon {
+  position: absolute;
+  left: var(--spacing-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted-foreground);
+}
+
+.monospaceInput {
+  font-family: var(--font-family-monospace);
+  padding-left: calc(var(--spacing-3) * 2 + 16px);
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: var(--background);
+}
+
+.errorBox {
+  padding: var(--spacing-3);
+  background-color: color-mix(in srgb, var(--error) 15%, transparent);
+  border: 1px solid var(--error);
+  color: var(--error-foreground);
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+}
+
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-2);
+}
+
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+/* Recommended Route Styles */
+.recommendedRoute {
+  border: 1px solid var(--success);
+  background-color: color-mix(in srgb, var(--success) 5%, var(--surface));
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.recommendedHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid color-mix(in srgb, var(--success) 20%, transparent);
+  padding-bottom: var(--spacing-3);
+}
+
+.effectiveCost {
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.step {
+  display: flex;
+  gap: var(--spacing-3);
+  align-items: flex-start;
+}
+
+.stepNumber {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--success);
+  color: var(--success-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-monospace);
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--spacing-2);
+}
+
+.stepTitle {
+  font-family: var(--font-family-base);
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.stepCost {
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  white-space: nowrap;
+}
+
+.breakdownBox {
+  background-color: var(--background);
+  border: 1px dashed color-mix(in srgb, var(--success) 40%, transparent);
+  padding: var(--spacing-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.breakdownRow {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family-monospace);
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.breakdownDivider {
+  height: 1px;
+  background-color: color-mix(in srgb, var(--success) 20%, transparent);
+  margin: var(--spacing-1) 0;
+}
+
+.breakdownTotal {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* Comparison Table Styles */
+.comparisonSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparisonTable {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+}
+
+.comparisonRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  padding: var(--spacing-2) var(--spacing-3);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  font-family: var(--font-family-monospace);
+  font-size: 0.75rem;
+}
+
+.comparisonRow:last-child {
+  border-bottom: none;
+}
+
+.bestRow {
+  background-color: color-mix(in srgb, var(--success) 5%, transparent);
+}
+
+.colMethod {
+  font-family: var(--font-family-base);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.bestLabel {
+  color: var(--success);
+  font-size: 0.75rem;
+  font-family: var(--font-family-monospace);
+}
+
+.colFee {
+  color: var(--error);
+}
+
+.colReceive {
+  font-weight: 600;
+  color: var(--success);
+}
+
+.colSavings {
+  color: var(--muted-foreground);
+  text-align: right;
+}
+
+/* Summary Box */
+.summaryBox {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.summaryHeader {
+  font-family: var(--font-family-heading);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-2);
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family-monospace);
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.feeText {
+  color: var(--error);
+}
+
+.summaryDivider {
+  height: 1px;
+  background-color: var(--border);
+  margin: var(--spacing-2) 0;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.totalText {
+  font-family: var(--font-family-monospace);
+  font-size: 1.25rem;
+  color: var(--success);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--success) 30%, transparent);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

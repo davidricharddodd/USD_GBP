@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  padding: var(--spacing-4);
+  position: relative;
+}
+
+/* Subtle grid background for terminal feel */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius); /* Strictly 0px per design system */
+  padding: var(--spacing-8);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  z-index: 10;
+}
+
+/* Top border highlight for visual depth and terminal aesthetic */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+.header {
+  margin-bottom: var(--spacing-8);
+  text-align: left;
+}
+
+.systemStatus {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-family: var(--font-family-monospace);
+  font-size: 0.7rem;
+  color: var(--muted-foreground);
+  margin-bottom: var(--spacing-4);
+  letter-spacing: 0.05em;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 50%; /* Only exception for tiny status indicators */
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  color: var(--foreground);
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 var(--spacing-2) 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: var(--font-family-base);
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.authSection {
+  margin-bottom: var(--spacing-8);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding-top: var(--spacing-4);
+  font-family: var(--font-family-monospace);
+  font-size: 0.65rem;
+  color: var(--muted-foreground);
+  letter-spacing: 0.05em;
+}
