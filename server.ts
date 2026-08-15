@@ -48,6 +48,20 @@ app.get('_api/alerts/list', async c => {
     return c.text("Error loading endpoint code " + e.message, 500)
   }
 });
+app.post('_api/auth/admin_login', async c => {
+  try {
+    const { handle } = await import("./endpoints/auth/admin_login_POST.js");
+    let request = c.req.raw;
+    const response = await handle(request);
+    if (!(response instanceof Response) && response.constructor.name !== "Response") {
+      return c.text("Invalid response format. handle should always return a Response object." + response.constructor.name, 500);
+    }
+    return response;
+  } catch (e) {
+    console.error(e);
+    return c.text("Error loading endpoint code " + e.message, 500)
+  }
+});
 app.post('_api/auth/establish_session', async c => {
   try {
     const { handle } = await import("./endpoints/auth/establish_session_POST.js");

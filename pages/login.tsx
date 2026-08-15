@@ -43,6 +43,10 @@ export default function Login() {
         <div style={{ marginTop: '1rem', textAlign: 'center', opacity: 0.6, fontSize: '0.8rem' }}>
           <a href="/admin-login" style={{ color: 'inherit' }}>Admin login</a>
         </div>
+      
+        <div style={{ marginTop: '1rem', textAlign: 'center', opacity: 0.6, fontSize: '0.8rem' }}>
+          <a href="/admin-login" style={{ color: 'inherit' }}>Admin login</a>
+        </div>
       </main>
     </div>
   );
