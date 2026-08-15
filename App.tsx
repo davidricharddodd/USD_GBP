@@ -6,7 +6,6 @@ import PageLayout_0 from "./pages/login.pageLayout.tsx";
 import Page_1 from "./pages/_index.tsx";
 import PageLayout_1 from "./pages/_index.pageLayout.tsx";
 import AdminLoginPage from "./pages/AdminLogin.tsx";
-import AdminLoginPage from "./pages/AdminLogin.tsx";
 
 if (!window.requestIdleCallback) {
   window.requestIdleCallback = (cb) => {
@@ -17,10 +16,8 @@ if (!window.requestIdleCallback) {
 import "./base.css";
 
 const fileNameToRoute = new Map([
-  ["./pages/AdminLogin.tsx","/admin-login"],
   ["./pages/AdminLogin.tsx","/admin-login"],["./pages/login.tsx","/login"],["./pages/_index.tsx","/"]]);
 const fileNameToComponent = new Map([
-    ["./pages/AdminLogin.tsx", AdminLoginPage],
     ["./pages/AdminLogin.tsx", AdminLoginPage],
     ["./pages/login.tsx", Page_0],
 ["./pages/_index.tsx", Page_1],
@@ -124,7 +121,6 @@ export function App() {
       <GlobalContextProviders>
         <Routes>
           {toElement({ trie: buildLayoutTrie({
-"./pages/AdminLogin.tsx": [],
 "./pages/AdminLogin.tsx": [],
 "./pages/login.tsx": PageLayout_0,
 "./pages/_index.tsx": PageLayout_1,

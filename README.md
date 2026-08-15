@@ -69,11 +69,8 @@ Set these variables in the Railway web service settings:
 - `NODE_ENV` — Set to `production`
 
 **Application-specific:**
-   - ADMIN_PASSWORD_HASH
-   - ADMIN_USERNAME
    - ANTHROPIC_API_KEY
    - API_KEY
-   - DATABASE_URL
    - FLOOT_DATABASE_URL
    - FLOOT_MOBILE_APP_ID
    - FLOOT_OAUTH_CLIENT_ID
